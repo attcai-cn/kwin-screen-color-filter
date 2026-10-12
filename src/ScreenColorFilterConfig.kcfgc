@@ -1,0 +1,4 @@
+File=options.kcfg
+ClassName=ScreenColorFilterConfig
+Singleton=true
+Mutators=true

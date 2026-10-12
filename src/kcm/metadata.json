@@ -1,0 +1,12 @@
+{
+    "KPlugin": {
+        "Name": "Screen Color Filter",
+        "Name[zh_CN]": "屏幕色彩滤镜",
+        "ServiceTypes": [
+            "KCModule"
+        ]
+    },
+    "X-KDE-ParentComponents": [
+        "kwin4_effect_screencolorfilter"
+    ]
+}

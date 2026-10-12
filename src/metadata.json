@@ -1,0 +1,26 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "maintainer@localhost",
+                "Name": "Screen Color Filter contributors"
+            }
+        ],
+        "Category": "Accessibility",
+        "Description": "Apply a system-wide color tint with adjustable color and intensity, like f.lux / Windows color filters.",
+        "Description[zh_CN]": "像 f.lux / Windows 颜色滤镜一样，给整个屏幕叠加可自定义颜色和强度的色彩滤镜。",
+        "EnabledByDefault": false,
+        "License": "GPL",
+        "Name": "Screen Color Filter",
+        "Name[zh_CN]": "屏幕色彩滤镜",
+        "ServiceTypes": [
+            "KWin/Effect"
+        ],
+        "Version": "1.0"
+    },
+    "org.kde.kwin.effect": {
+        "enabledByDefaultMethod": false
+    },
+    "X-KDE-Ordering": "5",
+    "X-KDE-ConfigModule": "kwin_screencolorfilter_config"
+}
