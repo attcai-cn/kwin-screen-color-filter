@@ -21,7 +21,6 @@ target_link_libraries(kwin4_effect_screencolorfilter
 if(${QT_MAJOR_VERSION} EQUAL 6)
     target_link_libraries(kwin4_effect_screencolorfilter
             KWin::kwin
-            Qt${QT_MAJOR_VERSION}::CorePrivate
     )
 else()
     target_link_libraries(kwin4_effect_screencolorfilter

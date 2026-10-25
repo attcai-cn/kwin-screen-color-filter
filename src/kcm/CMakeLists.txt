@@ -14,7 +14,6 @@ if(${QT_MAJOR_VERSION} EQUAL 6)
     kcoreaddons_add_plugin(kwin_screencolorfilter_config INSTALL_NAMESPACE "kwin/effects/configs" SOURCES ${kcm_SRCS})
 
     target_link_libraries(kwin_screencolorfilter_config
-            Qt${QT_MAJOR_VERSION}::CorePrivate
             KF${QT_MAJOR_VERSION}::KCMUtils
     )
 else()

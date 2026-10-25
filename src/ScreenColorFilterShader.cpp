@@ -24,18 +24,20 @@ ScreenColorFilterShader::ScreenColorFilterShader()
         return;
     }
 
+    // generateShaderFromFile() returns nullptr when the file cannot be read
+    // or the program fails to compile/link (KWin >= 6.0; older versions
+    // exposed GLShader::isValid() instead).
     m_shader = KWin::ShaderManager::instance()->generateShaderFromFile(
         KWin::ShaderTrait::MapTexture, QString(), frag);
-    if (!m_shader || !m_shader->isValid()) {
-        qCritical() << "ScreenColorFilter: invalid shader";
-        m_shader.reset();
+    if (!m_shader) {
+        qCritical() << "ScreenColorFilter: failed to build Tint.frag shader";
         return;
     }
 }
 
 bool ScreenColorFilterShader::IsValid() const
 {
-    return m_shader && m_shader->isValid();
+    return m_shader != nullptr;
 }
 
 void ScreenColorFilterShader::ApplyConfig() const
