@@ -1,3 +1,4 @@
+# main分支只适配了 KDE 6.3, KDE 新版请看 dev 分支
 # Screen Color Filter — 系统级屏幕色彩滤镜（KDE Plasma 6 / KWin 6 · Wayland）
 
 一个**系统全局生效**的 KWin 合成器特效，给整个屏幕叠加一层可自定义**颜色**和**强度**的滤镜，类似 Windows 的颜色滤镜 / f.lux。
